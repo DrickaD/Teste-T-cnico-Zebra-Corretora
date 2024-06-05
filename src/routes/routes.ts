@@ -4,4 +4,6 @@ import { statesControllers } from "../controllers/controllers";
 export const stateRoutes = Router();
 
 stateRoutes.get("/", 
-statesControllers.getStates)
+statesControllers.getStates);
+
+stateRoutes.get("/cities/:uf", statesControllers.getCities);
